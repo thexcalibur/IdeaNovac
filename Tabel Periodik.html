@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Periodik - IdeaNovac</title>
+    <link rel="icon" href="images/logo bintang 2.jpg">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1.5px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .alkali-metals { background-color: rgb(255, 206, 116); }
+        .alkaline-earth-metals { background-color: rgb(214, 214, 0); }
+        .post-transition-metals { background-color: aqua; }
+        .transition-metals { background-color: chocolate; }
+        .lanthanoids { background-color: pink; }
+        .actinoids { background-color: rgb(148, 35, 148) ;}
+        .non-metals { background-color: rgb(14, 213, 14); }
+        .metalloids { background-color: rgb(0, 255, 162); }
+        .noble-gases {background-color: rgb(83, 83, 210);}
+        .unknown {background-color: gray;}
+
+        .periodictable {
+            text-align: center;
+        }
+
+        .ketperiodik {
+            text-align: center;
+            font-size: small;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0;
+            height: 2000px; 
+            text-align: justify;
+            }
+        a {
+         color: #007bff;
+         Text-decoration: none;
+              }
+              
+        a:hover {
+         text-decoration: underline;
+              }
+        #footer{margin-top:4em;padding-bottom:2em;text-align:center;border-top:1px solid #ccc;font-size:.75em;}
+        li.menuitem{display:inline;padding:0;margin:0 0 0 1em}li.activemenuitem a{border-bottom:1px solid #3C0}
+        .footer2 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; 
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            }
+        .back-to-index-button,
+        .back-to-top-button {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: opacity 0.3s ease;
+            opacity: 1;
+            }
+            .back-to-index-button {
+            margin-right: 20px;
+            }
+            
+        .back-to-top-button.hide {
+            opacity: 0;
+            }
+          </style> 
+
+</head>
+<body>
+    <br><br>
+    <div class="periodictable"><img src="images/Tabel Periodik.png" alt="Periodic Table" width="90%" height="60%"></div>
+    <div class="ketperiodik"><p>Periodic Table Picture. Golus, M. (2023, February 21). <i>Prettier periodic table</i>. Prettier Periodic Table.
+    <br>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Atomic Number</th>
+            <th>Element</th>
+            <th>Mass (gr/mol)</th>
+            <th>Electron Configuration (Sub Skin)</th>
+            <th>E. C. (Skin)</th>
+        </tr>
+        <tr>
+            <td class="non-metals">Non metal</td>
+            <td>1 (gr. 1A, per. 1)</td>
+            <td>Hydrogen (H)</td>
+            <td>1.008</td>
+            <td>1s<sup>1</sup> </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>2 (gr. 8A, per. 1)</td>
+            <td>Helium (He)</td>
+            <td>4.0026</td>
+            <td>1s<sup>2</sup> / [2He]</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>3 (gr.1A, per. 2)</td>
+            <td>Lithium (Li)</td>
+            <td>6.94</td>
+            <td>1s<sup>2</sup> 2s<sup>1</sup> / [2He] 2s<sup>1</sup></td>
+            <td>2 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>4 (gr. 2A, per. 2) </td>
+            <td>Beryllium (Be)</td>
+            <td>9.0122</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> / [2He] 2s<sup>2</sup></td>
+            <td>2 2</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>5 (gr. 3A, per. 2)</td>
+            <td>Boron (B)</td>
+            <td>10.81</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup> / [2He] 2s<sup>2</sup> 2p<sup>1</sup></td>
+            <td>2 3</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>6 (gr. 4A, per. 2)</td>
+            <td>Carbon (C)</td>
+            <td>12.011</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup> / [2He] 2s<sup>2</sup> 2p<sup>2</sup></td>
+            <td>2 4</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>7 (gr. 5A, per. 2)</td>
+            <td>Nitrogen (N)</td>
+            <td>14.007</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup> / [2He] 2s<sup>2</sup> 2p<sup>3</sup></td>
+            <td>2 5</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>8 (gr. 6A, per. 2)</td>
+            <td>Oxygen (O)</td>
+            <td>15.999</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup> / [2He] 2s<sup>2</sup> 2p<sup>4</sup></td>
+            <td>2 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>9 (gr. 7A, per.2)</td>
+            <td>Fluorine (F)</td>
+            <td>18.998</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup> / [2He] 2s<sup>2</sup> 2p<sup>5</sup></td>
+            <td>2 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>10 (gr. 8A, per. 2)</td>
+            <td>Neon (Ne)</td>
+            <td>20.18</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> / [10Ne]</td>
+            <td>2 8</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>11 (gr. 1A, per. 3)</td>
+            <td>Sodium/Natrium (Na)</td>
+            <td>22.99</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup> / [10Ne] 3s<sup>1</sup></td>
+            <td>2 8 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>12 (gr. 2A, per. 3)</td>
+            <td>Magnesium (Mg)</td>
+            <td>24.305</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> / [10Ne] 3s<sup>2</sup></td>
+            <td>2 8 2</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>13 (gr. 3A, per. 3)</td>
+            <td>Aluminium (Al)</td>
+            <td>26.982</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>1</sup> / [10Ne] 3s<sup>2</sup> 3p<sup>1</sup></td>
+            <td>2 8 3</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>14 (gr. 4A, per. 3)</td>
+            <td>Silicon (Si)</td>
+            <td>28.085</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>2</sup> / [10Ne] 3s<sup>2</sup> 3p<sup>2</sup></td>
+            <td>2 8 4</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>15 (gr. 5A, per. 3)</td>
+            <td>Phosphorus (P)</td>
+            <td>30.974</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>3</sup> / [10Ne] 3s<sup>2</sup> 3p<sup>3</sup></td>
+            <td>2 8 5</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>16 (gr. 6A, per. 3)</td>
+            <td>Sulfur (S)</td>
+            <td>32.06</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>4</sup> / [10Ne] 3s<sup>2</sup> 3p<sup>4</sup></td>
+            <td>2 8 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non-Metal</td>
+            <td>17 (gr. 7A, per. 3)</td>
+            <td>Chlorine (Cl)</td>
+            <td>35.45</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup> / [10Ne] 3s<sup>2</sup> 3p<sup>5</sup></td>
+            <td>2 8 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>18 (gr. 8A, per. 3)</td>
+            <td>Argon (Ar)</td>
+            <td>39.948</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> / [18Ar]</td>
+            <td>2 8 8</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>19 (gr. 1A, per. 4)</td>
+            <td>Potassium (K)</td>
+            <td>39.098</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> / [18Ar] 4s<sup>1</sup></td>
+            <td>2 8 8 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>20 (gr. 2A, per. 4)</td>
+            <td>Calcium (Ca)</td>
+            <td>40.078</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> / [18Ar] 4s<sup>2</sup></td>
+            <td> 2 8 8 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>21 (gr. 3B, per. 4)</td>
+            <td>Scandium (Sc)</td>
+            <td>44.956</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>1</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>1</sup></td>
+            <td>2 8 9 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>22 (gr. 4B, per. 4)</td>
+            <td>Titanium (Ti)</td>
+            <td>47.867</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>2</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>2</sup></td>
+            <td>2 8 10 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>23 (gr. 5B, per. 4)</td>
+            <td>Vanadium (V)</td>
+            <td>50.942</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>3</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>3</sup></td>
+            <td>2 8 11 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>24 (gr. 6B, per. 4)</td>
+            <td>Chromium (Cr)</td>
+            <td>51.996</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>4</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>4</sup></td>
+            <td>2 8 12 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>25 (gr. 7B, per. 4)</td>
+            <td>Manganese (Mn)</td>
+            <td>54.938</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>5</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>5</sup></td>
+            <td>2 8 13 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>26 (gr. 8B, per. 4)</td>
+            <td>Iron (Fe)</td>
+            <td>55.845</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>6</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>6</sup></td>
+            <td>2 8 14 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>27 (gr. 9B, per. 4)</td>
+            <td>Cobalt (Co)</td>
+            <td>58.933</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>7</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>7</sup></td>
+            <td>2 8 15 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>28 (gr. 10B, per. 4)</td>
+            <td>Nickel (Ni)</td>
+            <td>58.693</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>8</sup></td>
+            <td>2 8 16 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>29 (gr. 11B, per. 4)</td>
+            <td>Copper (Cu)</td>
+            <td>63.546</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>10</sup> / [18Ar] 4s<sup>1</sup> 3d<sup>10</sup></td>
+            <td>2 8 18 1</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>30 (gr. 12B, per. 4)</td>
+            <td>Zinc (Zn)</td>
+            <td>65.38</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup></td>
+            <td>2 8 18 2</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>31 (gr. 3A, per. 4)</td>
+            <td>Gallium (Ga)</td>
+            <td>69.723</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>1</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>1</sup></td>
+            <td>2 8 18 3</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>32 (gr. 4A, per. 4)</td>
+            <td>Germanium (Ge)</td>
+            <td>72.63</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>2</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>2</sup></td>
+            <td>2 8 18 4</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>33 (gr. 5A, per. 4)</td>
+            <td>Arsenic (As)</td>
+            <td>74.922</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>3</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>3</sup></td>
+            <td>2 8 18 5</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non Metal</td>
+            <td>34 (gr. 6A, per. 4)</td>
+            <td>Selenium (Se)</td>
+            <td>78.971</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>4</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>4</sup></td>
+            <td>2 8 18 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non Metal</td>
+            <td>35 (gr. 7A, per. 4)</td>
+            <td>Bromine (Br)</td>
+            <td>79.904</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>5</sup> / [18Ar] 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>5</sup></td>
+            <td>2 8 18 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>36 (gr. 8A, per. 4)</td>
+            <td>Krypton (Kr)</td>
+            <td>83.798</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> / [36Kr] </td>
+            <td>2 8 18 8</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>37 (gr. 1A, per. 5)</td>
+            <td>Rubidium (Rb)</td>
+            <td>85.468</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> / [36Kr] 5s<sup>1</sup></td>
+            <td>2 8 18 8 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>38 (gr. 2A, per. 5)</td>
+            <td>Strontium (Sr)</td>
+            <td>87.62</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> / [36Kr] 5s<sup>2</sup></td>
+            <td>2 8 18 8 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>39 (gr. 3B, per. 5)</td>
+            <td>Yttrium (Y)</td>
+            <td>88.906</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>1</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>1</sup></td>
+            <td>2 8 18 9 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>40 (gr. 4B, per. 5)</td>
+            <td>Zirconium (Zr)</td>
+            <td>91.224</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>2</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>2</sup></td>
+            <td>2 8 18 10 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>41 (gr. 5B, per. 5)</td>
+            <td>Niobium (Nb)</td>
+            <td>92.906</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>3</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>3</sup></td>
+            <td>2 8 18 11 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>42 (gr. 6B, per. 5)</td>
+            <td>Molybdenum (Mo)</td>
+            <td>95.95</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>5</sup> / [36Kr] 5s<sup>1</sup> 4d<sup>5</sup></td>
+            <td>2 8 18 13 1</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>43 (gr. 7B, per. 5)</td>
+            <td>Technetium (Tc)</td>
+            <td>(98)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>5</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>5</sup></td>
+            <td>2 8 18 13 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>44 (gr. 8B, per. 5)</td>
+            <td>Ruthenium (Ru)</td>
+            <td>101.07</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>6</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>6</sup></td>
+            <td>2 8 18 14 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>45 (gr. 9B, per. 5)</td>
+            <td>Rhodium (Rh)</td>
+            <td>102.91</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>7</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>7</sup></td>
+            <td>2 8 18 15 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>46 (gr. 10B, per. 5)</td>
+            <td>Palladium (Pd)</td>
+            <td>106.42</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>8</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>8</sup></td>
+            <td>2 8 18 16 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>47 (gr. 11B, per. 5)</td>
+            <td>Silver (Ag)</td>
+            <td>107.87</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>10</sup> / [36Kr] 5s<sup>1</sup> 4d<sup>10</sup></td>
+            <td>2 8 18 18 1</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>48 (gr. 12B, per.5)</td>
+            <td>Cadmium (Cd)</td>
+            <td>112.41</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup></td>
+            <td>2 8 18 18 2</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>49 (gr. 3A, per.5)</td>
+            <td>Indium (In)</td>
+            <td>114.82</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>1</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>1</sup></td>
+            <td>2 8 18 18 3</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>50 (gr. 4A, per.5)</td>
+            <td>Tin (Sn)</td>
+            <td>118.711</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>2</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>2</sup></td>
+            <td>2 8 18 18 4</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>51 (gr. 5A, per. 5)</td>
+            <td>Antimony (Sb)</td>
+            <td>121.76</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>3</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>3</sup></td>
+            <td>2 8 18 18 5</td>
+        </tr>
+        <tr>
+            <td class="metalloids">Metalloid</td>
+            <td>52 (gr. 6A, per. 5)</td>
+            <td>Tellurium (Te)</td>
+            <td>127.6</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>4</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>4</sup></td>
+            <td>2 8 18 18 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non Metal</td>
+            <td>53 (gr. 7A, per. 5)</td>
+            <td>Iodine (I)</td>
+            <td>126.9</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>5</sup> / [36Kr] 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>5</sup></td>
+            <td>2 8 18 18 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>54 (gr. 8A, per.5)</td>
+            <td>Xenon (Xe)</td>
+            <td>131.29</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> / [54Xe]</td>
+            <td>2 8 18 18 8</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>55 (gr. 1A, per. 6)</td>
+            <td>Caesium (Cs)</td>
+            <td>132.91</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>1</sup> / [54Xe] 6s<sup>1</sup></td>
+            <td>2 8 18 18 8 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>56 (gr. 2A, per. 6)</td>
+            <td>Barium (Ba)</td>
+            <td>137.33</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> / [54Xe] 6s<sup>2</sup></td>
+            <td>2 8 18 18 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>57 (gr. 3B, per. 6)</td>
+            <td>Lanthanum (La)</td>
+            <td>138.91</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>1</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>1</sup></td>
+            <td>2 8 18 19 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>58 (gr. 3B, per. 6)</td>
+            <td>Cerium (Ce)</td>
+            <td>140.12</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>2</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>2</sup></td>
+            <td>2 8 18 20 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>59 (gr. 3B, per. 6)</td>
+            <td>Praseodymium (Pr)</td>
+            <td>140.91</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>3</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>3</sup></td>
+            <td>2 8 18 21 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>60 (gr. 3B, per. 6)</td>
+            <td>Neodymium (Nd)</td>
+            <td>144.24</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>4</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>4</sup></td>
+            <td>2 8 18 22 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>61 (gr. 3B, per. 6)</td>
+            <td>Promethium (Pm)</td>
+            <td>144.24</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>5</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>5</sup></td>
+            <td>2 8 18 23 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>62 (gr. 3B, per. 6)</td>
+            <td>Samarium (Sm)</td>
+            <td>150.36</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>6</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>6</sup></td>
+            <td>2 8 18 24 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>63 (gr. 3B, per. 6)</td>
+            <td>Europium (Eu)</td>
+            <td>151.96</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>7</sup></td>
+            <td>2 8 18 25 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>64 (gr. 3B, per. 6)</td>
+            <td>Gadolinium (Gd)</td>
+            <td>157.25</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>8</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>8</sup></td>
+            <td>2 8 18 26 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>65 (gr. 3B, per. 6)</td>
+            <td>Terbium (Tb)</td>
+            <td>158.93</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>9</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>9</sup></td>
+            <td>2 8 18 27 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>66 (gr. 3B, per. 6)</td>
+            <td>Dysprosium (Dy)</td>
+            <td>162.5</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>10</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>10</sup></td>
+            <td>2 8 18 28 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>67 (gr. 3B, per. 6)</td>
+            <td>Holmium (Ho)</td>
+            <td>164.93</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>11</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>11</sup></td>
+            <td>2 8 18 29 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>68 (gr. 3B, per. 6)</td>
+            <td>Erbium (Er)</td>
+            <td>167.26</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>12</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>12</sup></td>
+            <td>2 8 18 30 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>69 (gr. 3B, per. 6)</td>
+            <td>Thulium (Tm)</td>
+            <td>168.93</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>13</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>13</sup></td>
+            <td>2 8 18 31 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>70 (gr. 3B, per. 6)</td>
+            <td>Ytterbium (Yb)</td>
+            <td>173.05</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup></td>
+            <td>2 8 18 32 8 2</td>
+        </tr>
+        <tr>
+            <td class="lanthanoids">Lanthanoid</td>
+            <td>71 (gr. 3B, per. 6)</td>
+            <td>Lutetium (Lu)</td>
+            <td>174.97</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup></td>
+            <td>2 8 18 32 9 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>72 (gr. 4B, per. 6)</td>
+            <td>Hafnium (Hf)</td>
+            <td>178.49</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>2</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>2</sup></td>
+            <td>2 8 18 32 10 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>73 (gr. 5B, per. 6)</td>
+            <td>Tantalum (Ta)</td>
+            <td>180.95</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>3</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>3</sup></td>
+            <td>2 8 18 32 11 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>74 (gr. 6B, per. 6)</td>
+            <td>Tungsten (W)</td>
+            <td>183.84</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>4</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>4</sup></td>
+            <td>2 8 18 32 12 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>75 (gr. 7B, per. 6)</td>
+            <td>Rhenium (Re)</td>
+            <td>186.21</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>5</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>5</sup></td>
+            <td>2 8 18 32 13 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>76 (gr. 8B, per. 6)</td>
+            <td>Osmium (Os)</td>
+            <td>190.23</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>6</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>6</sup></td>
+            <td>2 8 18 32 14 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>77 (gr. 9B, per. 6)</td>
+            <td>Iridium (Ir)</td>
+            <td>192.22</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>7</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>7</sup></td>
+            <td>2 8 18 32 15 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>78 (gr. 10B, per. 6)</td>
+            <td>Platinum (Pt)</td>
+            <td>195.08</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>8</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>8</sup></td>
+            <td>2 8 18 32 16 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>79 (gr. 11B, per. 6)</td>
+            <td>Gold (Au)</td>
+            <td>196.97</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>9</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>9</sup></td>
+            <td>2 8 18 32 17 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>80 (gr. 12B, per. 6)</td>
+            <td>Mercury (Hg)</td>
+            <td>200.59</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup></td>
+            <td>2 8 18 32 18 2</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>81 (gr. 3A, per. 6)</td>
+            <td>Thallium (Tl)</td>
+            <td>204.38</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>1</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>1</sup></td>
+            <td>2 8 18 32 18 3</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>82 (gr. 4A, per. 6)</td>
+            <td>Lead (Pb)</td>
+            <td>207.2</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>2</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>2</sup></td>
+            <td>2 8 18 32 18 4</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>83 (gr. 5A, per. 6)</td>
+            <td>Bismuth (Bi)</td>
+            <td>208.98</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>3</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>3</sup></td>
+            <td>2 8 18 32 18 5</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>84 (gr. 6A, per. 6)</td>
+            <td>Polonium (Po)</td>
+            <td>(209)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>4</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>4</sup></td>
+            <td>2 8 18 32 18 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non Metal</td>
+            <td>85 (gr. 7A, per. 6)</td>
+            <td>Astatine (At)</td>
+            <td>(210)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>5</sup> / [54Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>5</sup></td>
+            <td>2 8 18 32 18 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>86 (gr. 8A, per. 6)</td>
+            <td>Radon (Rn)</td>
+            <td>(222)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> / [86Rn]</td>
+            <td>2 8 18 32 18 8</td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">Alkali Metal</td>
+            <td>87 (gr. 1A, per. 7)</td>
+            <td>Francium (Fr)</td>
+            <td>(223)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>1</sup> / [86Rn] 7s<sup>1</sup></td>
+            <td>2 8 18 32 18 8 1</td>
+        </tr>
+        <tr>
+            <td class="alkaline-earth-metals">Alkaline Earth Metal</td>
+            <td>88 (gr. 2A, per. 7)</td>
+            <td>Radium (Ra)</td>
+            <td>(226)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> / [86Rn] 7s<sup>2</sup></td>
+            <td>2 8 18 32 18 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>89 (gr. 3B, per. 7)</td>
+            <td>Actinium (Ac)</td>
+            <td>(227)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>1</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>1</sup></td>
+            <td>2 8 18 32 19 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>90 (gr. 3B, per. 7)</td>
+            <td>Thorium (Th)</td>
+            <td>232.04</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>2</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>2</sup></td>
+            <td>2 8 18 32 20 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>91 (gr. 3B, per. 7)</td>
+            <td>Protactinium (Pa)</td>
+            <td>231.04</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>3</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>3</sup></td>
+            <td>2 8 18 32 21 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>92 (gr. 3B, per. 7)</td>
+            <td>Uranium (U)</td>
+            <td>238.03</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>4</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>4</sup></td>
+            <td>2 8 18 32 22 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>93 (gr. 3B, per. 7)</td>
+            <td>Neptunium (Np)</td>
+            <td>(237)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>5</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>5</sup></td>
+            <td>2 8 18 32 23 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>94 (gr. 3B, per. 7)</td>
+            <td>Plutonium (Pu)</td>
+            <td>(244)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>6</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>6</sup></td>
+            <td>2 8 18 32 24 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>95 (gr. 3B, per. 7)</td>
+            <td>Americium (Am)</td>
+            <td>(243)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>7</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>7</sup></td>
+            <td>2 8 18 32 25 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>96 (gr. 3B, per. 7)</td>
+            <td>Curium (Cm)</td>
+            <td>(247)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>8</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>8</sup></td>
+            <td>2 8 18 32 26 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>97 (gr. 3B, per. 7)</td>
+            <td>Berkelium (Bk)</td>
+            <td>(247)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>9</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>9</sup></td>
+            <td>2 8 18 32 27 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>98 (gr. 3B, per. 7)</td>
+            <td>Californium (Cf)</td>
+            <td>(251)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>10</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>10</sup></td>
+            <td>2 8 18 32 28 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>99 (gr. 3B, per. 7)</td>
+            <td>Einsteinium (Es)</td>
+            <td>(257)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>11</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>11</sup></td>
+            <td>2 8 18 32 29 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>100 (gr. 3B, per. 7)</td>
+            <td>Fermium (Fm)</td>
+            <td>(257)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>12</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>12</sup></td>
+            <td>2 8 18 32 30 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>101 (gr. 3B, per. 7)</td>
+            <td>Mendelevium (Md)</td>
+            <td>(258)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>13</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>13</sup></td>
+            <td>2 8 18 32 31 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>102 (gr. 3B, per. 7)</td>
+            <td>Nobelium (No)</td>
+            <td>(259)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup></td>
+            <td>2 8 18 32 32 8 2</td>
+        </tr>
+        <tr>
+            <td class="actinoids">Actinoid</td>
+            <td>103 (gr. 3B, per. 7)</td>
+            <td>Lawrencium (Lr)</td>
+            <td>(266)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>1</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>1</sup></td>
+            <td>2 8 18 32 32 9 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>104 (gr. 4B, per. 7)</td>
+            <td>Rutherforrdium (Rf)</td>
+            <td>(267)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>2</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>2</sup></td>
+            <td>2 8 18 32 32 10 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>105 (gr. 5B, per. 7)</td>
+            <td>Dubnium (Db)</td>
+            <td>268</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>3</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>3</sup></td>
+            <td>2 8 18 32 32 11 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>106 (gr. 6B, per. 7)</td>
+            <td>Seaborgium (Sg)</td>
+            <td>(269)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>4</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>4</sup></td>
+            <td>2 8 18 32 32 12 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>107 (gr. 7B, per. 7)</td>
+            <td>Bohrium (Bh)</td>
+            <td>(270)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>5</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>5</sup></td>
+            <td>2 8 18 32 32 13 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>108 (gr. 8B, per. 7)</td>
+            <td>Hassium (Hs)</td>
+            <td>(277)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>6</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>6</sup></td>
+            <td>2 8 18 32 32 14 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>109 (gr. 9B, per. 7)</td>
+            <td>Meitnerium (Mt)</td>
+            <td>(278)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>7</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>7</sup></td>
+            <td>2 8 18 32 32 15 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>110 (gr. 10B, per. 7)</td>
+            <td>Darmstadtium (Ds)</td>
+            <td>(281)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>8</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>8</sup></td>
+            <td>2 8 18 32 32 16 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>111 (gr. 11B, per. 7)</td>
+            <td>Roentgenium (Rg)</td>
+            <td>(282)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>9</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>9</sup></td>
+            <td>2 8 18 32 32 17 2</td>
+        </tr>
+        <tr>
+            <td class="transition-metals">Transition Metal</td>
+            <td>112 (gr. 12B, per. 7)</td>
+            <td>Copernicium (Cn)</td>
+            <td>(282)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup></td>
+            <td>2 8 18 32 32 18 2</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>113 (gr. 3A, per. 7)</td>
+            <td>Nihonium (Nh)</td>
+            <td>(286)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>1</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>1</sup></td>
+            <td>2 8 18 32 32 18 3</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>114 (gr. 4A, per. 7)</td>
+            <td>Flerovium (Fl)</td>
+            <td>(289)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>2</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>2</sup></td>
+            <td>2 8 18 32 32 18 4</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>115 (gr. 5A, per. 7)</td>
+            <td>Moscovium (Mc)</td>
+            <td>(290)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>3</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>3</sup></td>
+            <td>2 8 18 32 32 18 5</td>
+        </tr>
+        <tr>
+            <td class="post-transition-metals">Post Transition Metal</td>
+            <td>116 (gr. 6A, per. 7)</td>
+            <td>Livermorium (Lv)</td>
+            <td>(293)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>4</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>4</sup></td>
+            <td>2 8 18 32 32 18 6</td>
+        </tr>
+        <tr>
+            <td class="non-metals">Non Metal</td>
+            <td>117 (gr. 7A, per. 7)</td>
+            <td>Tenessine (Ts)</td>
+            <td>(294)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>5</sup> / [86Rn] 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>5</sup></td>
+            <td>2 8 18 32 32 18 7</td>
+        </tr>
+        <tr>
+            <td class="noble-gases">Noble Gas</td>
+            <td>118 (gr. 8A, per. 7)</td>
+            <td>Oganesson (Og)</td>
+            <td>(294)</td>
+            <td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>6</sup> / [118Og] 
+            <td>2 8 18 32 32 18 8</td>
+        </tr>
+    </table>
+    <div id="footer">
+        <footer>
+            <ul class="menu">
+                <li class="menuitem"><a href="index.html" title="Home">Home</a></li>
+                <li class="menuitem"><a href="https://wa.me//62895412153702" target="_blank" title="Contact">Need Tutor?</a></li>
+                <li class="menuitem">© IdeaNovac.com</li>
+            </ul>
+        </footer>
+    <div class="footer2">
+        <div class="back-to-top-button" onclick="scrollToTop()">^</div>
+      </div>
+      
+      <script>
+      let timeoutId;
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        resetTimeout();
+      }
+      
+      window.addEventListener('scroll', function() {
+        var backToTopButton = document.querySelector('.back-to-top-button');
+        if (window.scrollY > 300) { 
+          backToTopButton.classList.remove('hide'); 
+          resetTimeout();
+        } else {
+          backToTopButton.classList.add('hide');
+        }
+      });
+      function resetTimeout() {
+        clearTimeout(timeoutId); 
+        timeoutId = setTimeout(function() {
+          var backToTopButton = document.querySelector('.back-to-top-button');
+          backToTopButton.classList.add('hide');
+        }, 2000);
+      }
+      
+      </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Hukum Dasar</title>
+    <link rel="icon" href="images/logo bintang 2.jpg">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        height: 200px; 
+        text-align: justify;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      #footer{margin-top:4em;padding-bottom:2em;text-align:center;border-top:1px solid #ccc;font-size:.75em;}
+      li.menuitem{display:inline;padding:0;margin:0 0 0 1em}li.activemenuitem a{border-bottom:1px solid #3C0}
+      .footer2 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px; 
+        z-index: 999;
+        display: flex;
+        align-items: center;
+      }
+      .indent {
+        text-indent:3%;
+      }
+      .back-to-index-button,
+      .back-to-top-button {
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: opacity 0.3s ease;
+        opacity: 1;
+      }
+      .back-to-index-button {
+        margin-right: 20px;
+      }
+      
+      .back-to-top-button.hide {
+        opacity: 0;
+      }
+    </style> 
+</head>
+<body>
+    <h2 style="text-align:center">Latihan Soal Hukum Dasar</h2>
+    <h4 class="indent">1. Latihan Soal Hukum Lavoisier</h4>
+    <img src="images/soallavoisier.png" style="text-align:left; width:65%; height: auto; margin-left: 6.5%">
+    <h4 class="indent">2. Latihan Soal Hukum Proust</h4>
+    <img src="images/soalproust1.png" style="text-align:left; width:65%; height: auto; margin-left: 6.5%">
+    <h4 class="indent">3. Latihan Soal Hukum Dalton</h4>
+    <img src="images/soaldalton1.png" style="text-align:left; width:65%; height: auto; margin-left: 6.5%">
+    <h4 class="indent">4. Latihan Soal Hukum Gay-Lussac</h4>
+    <img src="images/soalgayfix.png" style="text-align:left; width:65%; height: auto; margin-left: 6.5%">
+    <h4 class="indent">5. Latihan Soal Hipotesis Avogadro</h4>
+    <img src="images/soalavogadro.png" style="text-align:left; width:65%; height: auto; margin-left: 6.5%">
+
+
+    <a href="pembahasan-hukum-dasar.html" style="text-align:center"><p>Pembahasan Latihan Soal Hukum Dasar Kimia</p></a>
+    <a href="hukum-dasar.html" style="text-align: center"><p>Materi Hukum Dasar</p></a>
+    <div id="footer">
+      <footer>
+          <ul class="menu">
+              <li class="menuitem"><a href="index.html" title="Home">Home</a></li>
+              <li class="menuitem"><a href="https://wa.me//62895412153702?text=bang+tutor+dong/" target="_blank" title="Contact">Need Tutor?</a></li>
+              <li class="menuitem">© IdeaNovac.xyz</li>
+          </ul>
+      </footer>
+    <div class="footer2">
+      <div class="back-to-top-button" onclick="scrollToTop()">^</div>
+    </div>
+    
+    <script>
+    let timeoutId;
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      resetTimeout();
+    }
+    
+    window.addEventListener('scroll', function() {
+      var backToTopButton = document.querySelector('.back-to-top-button');
+      if (window.scrollY > 300) { 
+        backToTopButton.classList.remove('hide'); 
+        resetTimeout();
+      } else {
+        backToTopButton.classList.add('hide');
+      }
+    });
+    function resetTimeout() {
+      clearTimeout(timeoutId); 
+      timeoutId = setTimeout(function() {
+        var backToTopButton = document.querySelector('.back-to-top-button');
+        backToTopButton.classList.add('hide');
+      }, 2000);
+    }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - Konfigurasi Elektron</title>
+    <link rel="icon" href="images/logo bintang 2.jpg">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin-left: 10%; 
+        margin-right: 15%;
+        padding: 0;
+        height: 2000px; 
+        text-align: justify;
+        line-height: 150%;
+      }
+      p{
+        margin-bottom: 2%;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      #footer{margin-top:4em;padding-bottom:2em;text-align:center;border-top:1px solid #ccc;font-size:.75em;}
+      li.menuitem{display:inline;padding:0;margin:0 0 0 1em}li.activemenuitem a{border-bottom:1px solid #3C0}
+      .footer2 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px; 
+        z-index: 999;
+        display: flex;
+        align-items: center;
+      }
+      .back-to-index-button,
+      .back-to-top-button {
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: opacity 0.3s ease;
+        opacity: 1;
+      }
+      .back-to-index-button {
+        margin-right: 20px;
+      }
+      
+      .back-to-top-button.hide {
+        opacity: 0;
+      }
+
+      .indent {
+        text-indent: 5%;
+      }
+      .daftarisi {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto; 
+      }
+      
+      .bordered {
+        border: 2px solid black; 
+        padding: 3%; 
+      }
+      
+      .bordered h3 {
+        margin-top: 0; 
+      }
+      
+      .bordered ul {
+        list-style-type: none; 
+        padding: 0; 
+      }
+      
+      .bordered li {
+        margin-bottom: 3%; 
+      }
+      .tabelbohr {
+        margin: 0 auto; 
+        text-align: center; ;
+      }
+      .soal {
+        text-indent: 3%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+      }
+      .dark-mode-toggle {
+        position: fixed;
+        bottom: 20px;
+        left: 20px; 
+        z-index: 999;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+      
+      .dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      
+      .dark-mode a {
+        color: #1e90ff;
+      }
+      
+      .dark-mode a:hover {
+        text-decoration: underline;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 50%; 
+        margin-top: 3%;
+      }
+      
+      th, td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      
+      th {
+        background-color: lightgray; 
+      }
+      @media (max-width: 768px) {
+        .bordered {
+          padding: 5%; 
+          }
+      }
+    </style> 
+</head>
+<body>
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+
+    <h1 style="text-align: center;">Konfigurasi Elektron</h1>
+
+    <div class="daftarisi" style="text-align: left">
+      <div class="bordered"><h3>Daftar Isi:</h3>
+    <a href="konfigurasi-elektron.html#konf1"><h4>1. Teori Atom</h4></a>
+      <ul style="margin-left:7%">
+        <li><a href="konfigurasi-elektron.html#konf1.1">1.1. Teori Atom Democritus</a></li>
+        <li><a href="konfigurasi-elektron.html#konf1.2">1.2. Teori Atom Dalton</a></li>
+        <li><a href="konfigurasi-elektron.html#konf1.3">1.3. Teori Atom Thomson</a></li>
+        <li><a href="konfigurasi-elektron.html#konf1.4">1.4. Teori Atom Rutherford</a></li>
+        <li><a href="konfigurasi-elektron.html#konf1.5">1.5. Teori Atom Bohr</a></li>
+      </ul>
+    <a href="konfigurasi-elektron.html#konf2"><h4>2. Notasi Atom</h4></a>
+      <ul style="margin-left:7%">
+        <li><a href="konfigurasi-elektron.html#konf2.1">2.1. Notasi Atom Netral</a></li>
+        <li><a href="konfigurasi-elektron.html#konf2.2">2.2. Notasi Atom Positif</a></li>
+        <li><a href="konfigurasi-elektron.html#konf2.3">2.3. Notasi Atom Negatif</a></li>
+      </ul> 
+    <a href="konfigurasi-elektron.html#konf3"><h4>3. Konfigurasi Elektron</h4></a>
+      <ul style="margin-left:7%">
+        <li><a href="konfigurasi-elektron.html#konf3.1">3.1. Konfigurasi Elektron Kulit (Bohr)</a></li>
+      </ul>
+  </div></div>
+   
+
+    <h2 id="konf1" style="text-align: left;">1. Teori Atom</h2>
+      <h3 id="konf1.1" style="text-align:left">1.1. Teori Atom Democritus</h3>
+      <div style="margin-left:4%">
+        <p>&#10037; Dia memperkenalkan konsep atom pertama kali.</p>
+        <p>&#10037; Menurutnya, atom adalah bagian terkecil dari materi yang tidak dapat dibagi lagi, dan dia memberinya nama "Atomos" yang berarti "tak terbagi".</p>
+        <p>&#10037; Namun, teorinya disangkal oleh Aristoteles.</p>
+      </div>
+      
+      <h3 id="konf1.2" style="text-align:left">1.2. Teori Atom Dalton</h3>
+      <div style="margin-left:4%">
+        <p>&#10037; Dalton menyatakan bahwa atom adalah partikel penyusun materi yang berbentuk bola pejal atau berisi. </p>
+        <p>&#10037; Namun, kelemahannya adalah dia tidak bisa menjelaskan apa yang membuat atom tersebut.</p>
+        <img src="images/dalton.png" style="text-align:left; width:15%; height: auto; margin-left: 6.5%">
+      </div>
+      
+      <h3 id="konf1.3" style="text-align:left">1.3. Teori Atom Thomson</h3>
+      <div style="margin-left:4%">
+        <p>&#10037; Thomson menemukan elektron dan mengusulkan model atom yang mirip roti kismis, dengan elektron tersebar dalam bola pejal yang bermuatan positif.</p>
+        <p>&#10037; Tapi, modelnya tidak bisa menjelaskan susunan partikel positif dan negatif dalam atom, juga tidak ada inti atom.</p> 
+        <img src="images/thomson.png" style="text-align:left; width:15%; height: auto; margin-left: 6.5%">
+      </div>
+
+      <h3 id="konf1.4" style="text-align:left">1.4. Teori Atom Rutherford</h3>
+      <div style="margin-left:4%">
+        <p>&#10037; Melakukan percobaan dengan menembakan sinar α (bermuatan positif) ke lempengan emas dan hasil nya terdapat sinar yang dibelokan, sinar yang dipantulkan dan sinar yang menembus .</p>
+        <img src="images/rutherford.png" style="text-align:left; width:75%; height: auto; margin-left: 6.5%">
+        <p>&#10037; Posisi A: Sinar α menembus lempengan emas sebab sinar melewati ruang kosong jauh dari inti atom</p>
+        <p>&#10037; Posisi B: Sinar α dibelokan sebab sinar melewati ruang kosong yang mendekati inti atom (+)</p>
+        <p>&#10037; Posisi C: Sinar α dipantulkan sebab sinar menabrak inti atom, karena inti bermuatan + maka terpantul</p>
+        <p>&#10037; <b>Kesimpulan</b>: inti atom bermuatan positif dan terdapat electron yang memutari inti, terdapat ruang kosong diantara inti atom dan electron, bentuk atom seperti tata surya</p>
+        <p>&#10037; <b>Kelemahan</b>: tidak dapat menjelaskan mengapa electron tidak jatuh ke inti atom</p>
+        <img src="images/rutherfford.png" style="text-align:left; width:23%; height: auto; margin-left: 6.5%">
+      </div>
+      
+      <h3 id="konf1.5" style="text-align:left">1.5. Teori Atom Bohr</h3>
+      <div style="margin-left:4%">
+        <p>&#10037; Bohr mengusulkan model atom dengan inti yang bermuatan positif dan netral, serta kulit elektron yang bergerak dalam orbit stasioner seperti tata surya.</p>
+        <p>&#10037; Konsep stasioner ini menjelaskan mengapa elektron tidak kehilangan energi saat bergerak mengelilingi inti.</p>
+        <p>&#10037; Stasioner: keadaan dimana tingkat electron sama dengan tingkat energy kuit atom, jadi makin jauh electron dari inti maka energi makin kuat, sehingga electron dalam mengelilingi inti tidak melepas energy.</p>
+      </div>
+
+    <h2 id="konf2" style="text-align: left;">2. Notasi Atom</h2>
+      <h3 id="konf2.1" style="text-align:left">2.1. Notasi Atom Netral</h3>
+      <img src="images/notasinetral.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">
+      <div style="margin-left:4%">
+        <p>&#10037; Nomor atom (Z) = Proton (P).</p>
+        <p>&#10037; Neutron = Massa atom (A) - Nomor atom (Z).</p>
+        <p>&#10037; Atom netral: Proton (P) = nomer atom (Z) = Elektron (E).</p>
+        <p><b>Contoh Soal:</b></p>
+        <img src="images/soalnetral.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">        
+      </div>
+
+      <h3 id="konf2.2" style="text-align:left">2.2. Notasi Atom Positif</h3>
+      <p class="indent">&#10037; Atom postif terjadi karena atom melepas/kehilangan elektron.</p>
+      <img src="images/notasipositif.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">
+       <div class="indent">
+      <p>&#10037; Nomor atom (Z) = Proton (P).</p>
+      <p>&#10037; Neutron = Massa atom (A) - Nomor atom (Z).</p>
+
+      <p>&#10037; Atom positif: </p>
+      <p style="text-indent:7%"> Elektron (E) < Proton (P) atau Nomor atom (Z).</p>
+      <p style="text-indent:7%"> Elektron (E)= Nomor atom (Z) - Atom yang di lepas (q).</p>
+        </div>
+      <p><b>Contoh Soal:</b></p>
+      <img src="images/soalpositif.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">
+
+
+      <h3 id="konf2.3" style="text-align:left">2.3. Notasi Atom Negatif</h3>
+        <div class="indent">
+      <p>&#10037; Atom negatif terjadi karena atom menangkap electron</p>
+      <img src="images/notasinegatif.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">
+      <p>&#10037; Nomor atom (Z) = Proton (P).</p>
+      <p>&#10037; Neutron = Massa atom (A) – Nomor atom (Z).</p>
+      <p>&#10037; Atom negatif:</p>
+      <p style="text-indent:7%"> Elektron (E) > Proton (P) atau Nomor atom (Z) .</p>
+      <p style="text-indent:7%"> Elektron (E)= Nomor atom (Z) + Atom yang di lepas (q).</p>
+        </div>
+        <p><b>Contoh Soal:</b></p>
+        <img src="images/soalnegatif.png" style="text-align:left; width:50%; height: auto; margin-left: 6.5%">
+    <h2 id="konf3" style="text-align: left;">3. Konfigurasi Elektron</h2>
+    <p class="indent">Konfigurasi elektron adalah susunan elektron pada sebuah atom. Elektron adalah partikel bermuatan negatif yang berputar mengelilingi inti atom (terdapat neutron yang bermuatan netral dan proton yang bermuatan +). Melalui konfigurasi elektron kita bisa mengetahui golongan dan periode, golongan ditunjukan dengan elektron valensi (jumlah elektron terluar) dan periode ditunjukan dengan kulit terluar (nomor kulit terbesar pada elektron).</p>
+    <p class="indent">Konfigurasi elektron bisa dilakukan dengan 2 cara, yaitu <b>sub-kulit (kuantum)</b> dan <b>kulit (Bohr)</b>.</p>
+    <h3 id="konf3.1">3.1. Konfigurasi Elektron Kulit (Bohr)</h3>
+      <p class="indent">Dalam teori ini pengisian elektron dimulai dari <b>kulit terendah</b> yaitu kulit K, kulit L, Kulit M, dst. Adapun rumus untuk menentukan jumlah elektron maksimal adalah <b>2 &#215; <i>n</i><sup>2</sup></b>, dimana <i>n</i> adalah nomor kulit.</p>
+      
+      <div class="tabelbohr">
+        <table>
+          <tr>
+            <th>Nama Kulit</th>
+            <th>Nomor Kulit</th>
+            <th>Jumlah Elektron Maksimal</th>
+          </tr>
+          <tr>
+            <td>K</td>
+            <td>1</td>
+            <td>2 &#215; 1<sup>2</sup> = 2</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>2</td>
+            <td>2 &#215; 2<sup>2</sup> = 8</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>3</td>
+            <td>2 &#215; 3<sup>2</sup> = 18</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td>4</td>
+            <td>2 &#215; 4<sup>2</sup> = 32</td>
+          </tr>
+          <tr>
+            <td>O</td>
+            <td>5</td>
+            <td>2 &#215; 5<sup>2</sup> = 50</td>
+          </tr>
+          <tr>
+            <td>P</td>
+            <td>6</td>
+            <td>2 &#215; 6<sup>2</sup> = 72</td>
+          </tr>
+          <tr>
+            <td>Q</td>
+            <td>7</td>
+            <td>2 &#215; 7<sup>2</sup> = 98</td>
+          </tr>
+        </table>
+      </div>
+      <p class="indent">Konfigurasi ini hanya berlaku untuk golongan A. Aturan dari konfigurasi kulit sebagai berikut:</p>
+      <img src="images/teoribohr.png" style="text-align:left; width:100%; height: auto;">
+
+
+
+
+
+    <a href="latihan-soal-konfigurasi-elektron.html" style="text-align:center"><p>Latihan Soal Konfigurasi Elektron</p></a>
+
+    <div id="footer">
+      <footer>
+          <ul class="menu">
+              <li class="menuitem"><a href="index.html" title="Home">Home</a></li>
+              <li class="menuitem"><a href="https://wa.me//62895412153702" target="_blank" title="Contact">Need Tutor?</a></li>
+              <li class="menuitem">© IdeaNovac.xyz</li>
+          </ul>
+      </footer>
+    <div class="footer2">
+      <div class="back-to-top-button" onclick="scrollToTop()">^</div>
+    </div>
+  
+    <script>
+    let timeoutId;
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      resetTimeout();
+    }
+    
+    window.addEventListener('scroll', function() {
+      var backToTopButton = document.querySelector('.back-to-top-button');
+      if (window.scrollY > 300) { 
+        backToTopButton.classList.remove('hide'); 
+        resetTimeout();
+      } else {
+        backToTopButton.classList.add('hide');
+      }
+    });
+    function resetTimeout() {
+      clearTimeout(timeoutId); 
+      timeoutId = setTimeout(function() {
+        var backToTopButton = document.querySelector('.back-to-top-button');
+        backToTopButton.classList.add('hide');
+      }, 2000);
+    }
+    
+    </script>
+    <script>
+      let isDarkMode = false;
+
+function toggleDarkMode() {
+  const body = document.body;
+  const footer = document.getElementById('footer');
+  const toggleButton = document.querySelector('.dark-mode-toggle');
+  isDarkMode = !isDarkMode;
+
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+    footer.classList.add('dark-mode');
+    toggleButton.innerText = '☀️';
+  } else {
+    body.classList.remove('dark-mode');
+    footer.classList.remove('dark-mode');
+    toggleButton.innerText = '🌙';
+  }
+}
+
+    </script>
+</body>
+</html>

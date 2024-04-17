@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="materi ipa kelas 10 kurikulum merdeka, materi kimia kelas 10 kurikulum merdeka, hukum dasar kimia, persamaan reaksi kimia, konsep mol kimia, konfigurasi elektron kimia, hukum dasar, persamaan reaksi, konsep mol, konfigurasi eletron">
+    <meta name="description" content="Kumpulan materi kimia kelas 10 kurikulum merdeka beserta latihan soal dan pembahasannya lengkap.">
+    <meta property="og:site_name" content="IdeaNovac">
+    <meta itemprop="name" content="IdeaNovac">
+    <meta itemprop="description" content="Kumpulan materi-materi mata pelajaran kimia kelas 10 kurikulum merdeka beserta latihan soal dan pembahasannya.">
+    <title>Home - IdeaNovac</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index-mobile.css" media="(max-width: 600px)">
+    <link rel="icon" href="images/logo bintang 2.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-NTM0hR6fB5wM3xCw63cHJbbDp/8/bRnT1n3Rh4DX/360xMKm4uW1W/8MUivsUlA" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="videobg-container">
+        <video autoplay muted loop id="background-video">
+            <source src="videos/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="transparent-header">
+        <nav>
+            <ul class="menu">
+                <li class="dropdown-container">
+                    <button class="dropdown-toggle">Materi Belajar</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-submenu">
+                            <ul><li><a href="hukum-dasar.html">Hukum Dasar</a></li></ul>
+                            <ul><li><a href="konfigurasi-elektron.html">Konfigurasi Elektron</a></li></ul>
+                        </div>
+                    </div>
+                    </div>
+                    <li class="dropdown-container">
+                        <button class="dropdown-toggle">Latihan Soal</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-submenu">
+                            <p>Latihan Soal</p>
+                                <ul><li><a href="latihan-soal-hukum-dasar.html">Hukum Dasar</a></li></ul>
+                            </div>
+                            <div class="dropdown-submenu">
+                                <ul><li><a href="latihan-soal-konfigurasi-elektron.html">Konfigurasi Elektron</a></li></ul>
+                            </div>
+                            <div class="dropdown-submenu">
+                                <p>Pembahasan</p>
+                                <ul><li><a href="pembahasan-hukum-dasar.html">Hukum Dasar</a></li></ul>
+                            </div>
+                            <div class="dropdown-submenu">
+                                <ul><li><a href="pembahasan-konfigurasi-elektron.html">Konfigurasi Elektron</a></li></ul>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                <li class="dropdown-container">
+                    <button class="dropdown-toggle">Pustaka Kimia</button>
+                        <div class="dropdown-menu">
+                        <div class="dropdown-submenu">
+                            <ul><li><a href="Tabel Periodik.html">Tabel Periodik</a></li></ul>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <ul><li><a href="watchlist.html">Watchlist</a></li></ul>
+                        </div>
+                        </div>
+                <li class="dropdown-container">
+                    <button class="dropdown-toggle">About Us</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-submenu">
+                                <p>Contact Us</p>
+                                <ul>
+                                    <li><a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=nathanaelvalentino7117@gmail.com" target="_blank">Email</a></li>
+                                    <li><a href="http://wa.me//6289523813249/" target="_blank">WhatsApp</a></li>
+                                </ul>
+                            </div>
+                             
+                        </div>
+                    </li>
+            </ul>
+        </nav>    
+    </header>
+    
+    <main>
+        <div class="tagline">
+            <p class="tagline-hashtag">#ShineInCreativity</p>
+            <p class="tagline-text">BELAJAR KIMIA</p>
+            <p class="tagline-text">JADI LEBIH MUDAH</p>
+            <p class="tagline-text2">Website ini dikembangkan untuk membantu siswa kelas X SMA Sedes Sapientiae Semarang dalam mata pelajaran Kimia. Feel free to use!</p>
+        </div>
+        <div class="sambutan">
+            <p>Made By:</p>
+            <p>Nathanael Valentino XI-F/24</p>
+            <p>Vincent Manuel Lukito XI-F/29</p>
+            <p style="margin-bottom:15%">Michael Farrel Hariyanto XI-F/23</p>
+            <p>Copyright © 2024 IdeaNovac. All rights reserved.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Welcome to IdeaNovac! Here, you can learn about the periodic table, chemical reactions, and experiments. Our website is designed to make chemistry fun and accessible for high school students. Shine in Creativity!</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.transparent-header'); 
+            var video = document.getElementById('background-video');
+            var scrollPos = window.scrollY;
+            var videoOpacity = parseFloat(video.style.opacity) || 0.5; 
+            header.style.backgroundColor = `rgba(20, 20, 20, ${videoOpacity})`;
+            if (scrollPos > 0) {
+                var darkOpacity = 1;
+                header.style.backgroundColor = `rgba(20, 20, 20, ${darkOpacity})`;
+            } else {
+                header.style.backgroundColor = `rgba(20, 20, 20, ${videoOpacity})`;
+            }
+        });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+        var footer = document.querySelector('footer'); 
+        var video = document.getElementById('background-video');
+        var scrollPos = window.scrollY;
+        var videoOpacity = parseFloat(video.style.opacity) || 0.5; 
+        footer.style.backgroundColor = `rgba(20, 20, 20, ${videoOpacity})`;
+        if (scrollPos > 0) {
+            var darkOpacity = 1;
+            footer.style.backgroundColor = `rgba(20, 20, 20, ${darkOpacity})`;
+        } else {
+            footer.style.backgroundColor = `rgba(20, 20, 20, ${videoOpacity})`;
+        }
+    });
+</script>
+<script>
+    let docTitle = document.title;
+    window.addEventListener("blur", () =>{
+        document.title = "Idle - IdeaNovac";
+    })
+    window.addEventListener("focus", () =>{
+        document.title = docTitle;
+    })
+</script>
+<script>
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 600) {
+            document.querySelector('.desktop-only').style.display = 'block';
+            document.querySelector('.mobile-only').style.display = 'none';
+        } else {
+            document.querySelector('.desktop-only').style.display = 'none';
+            document.querySelector('.mobile-only').style.display = 'block';
+        }
+    });
+    window.dispatchEvent(new Event('resize'));
+</script>
+<script>
+    
+</script>
+</body>
+</html>
